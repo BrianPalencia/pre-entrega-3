@@ -1,0 +1,271 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Mukta", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  display: inline;
+  color: black;
+}
+
+.home-body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.icons-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #2f2f2f;
+}
+.icons-container .icons-section {
+  width: 255px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 25px;
+}
+.icons-container .icons-section a {
+  display: block;
+}
+.icons-container .icons-section .facebook-icon {
+  background-image: url("../assets/facebooklogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.icons-container .icons-section .twitter-icon {
+  background-image: url("../assets/logotwitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.icons-container .icons-section .instagram-icon {
+  background-image: url("../assets/instagramlogo.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.icons-container .icons-section .linkedin-icon {
+  background-image: url("../assets/logolinkedin.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+.icons-container .icons-section .youtube-icon {
+  background-image: url("../assets/logoyoutube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+}
+
+header {
+  display: flex;
+  height: 70px;
+  margin: 0 20px 0 25px;
+  justify-content: space-between;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+}
+header .logo img {
+  height: 50px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav .nav-link {
+  padding-right: 12px;
+}
+header nav .nav-link:hover {
+  color: #5B2080;
+}
+
+.home-main {
+  display: flex;
+  height: calc(100vh - 120px);
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/fondo2.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-main section {
+  text-align: center;
+}
+
+.home-main-text {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Mukta", sans-serif;
+  letter-spacing: 5px;
+  background: -webkit-linear-gradient(268deg, #2f2f2f, rgb(104, 139, 145) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 50px;
+}
+
+.home-main-buttom {
+  border: 1px solid #2f2f2f;
+  padding: 10px 15px;
+  background-image: linear-gradient(to right top, rgb(148, 148, 148) 0%, rgb(79, 79, 79) 35%, rgb(47, 47, 47) 100%);
+  color: rgb(245, 239, 239);
+  transition: all ease 0.5s;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  letter-spacing: 0;
+  font-family: "Mukta", sans-serif;
+}
+.home-main-buttom:hover {
+  background-image: linear-gradient(to left top, rgb(148, 148, 148) 0%, rgb(79, 79, 79) 35%, rgb(47, 47, 47) 100%);
+  color: rgb(242, 239, 239);
+}
+
+.blogs-main {
+  display: block;
+  background-color: #d9d9d9;
+  padding-bottom: 25px;
+}
+
+.blogs-posts-container h3 {
+  padding-bottom: 20px;
+  text-align: center;
+  color: #5B2080;
+}
+
+.blogs-buttom {
+  border: 1px solid #2f2f2f;
+  padding: 10px 15px;
+  font-size: 12px;
+  display: inline-block;
+  transition: all ease 0.3s;
+  border-radius: 3px;
+}
+.blogs-buttom:hover {
+  background: #2f2f2f;
+  color: #fff;
+}
+
+.blogs-posts-container {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blogs-posts-container .grid-container {
+  text-align: center;
+  padding-top: 25px;
+}
+.blogs-posts-container .post-container {
+  text-align: center;
+  display: block;
+  max-width: 80%;
+  margin: 25px auto 0;
+  padding: 12px;
+  background-color: #888888;
+  border-radius: 3px;
+}
+.blogs-posts-container .post-container .post-title {
+  font-size: 25px;
+  margin-top: 15px;
+  color: white;
+}
+.blogs-posts-container .post-container p {
+  margin-bottom: 25px;
+}
+.blogs-posts-container .post-container img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+footer {
+  width: 100%;
+  height: 110px;
+  background-color: #27292b;
+  border-top: 35px solid #2f2f2f;
+  text-align: center;
+}
+footer p {
+  color: white;
+  margin: 20px 25px 5px 25px;
+  font-size: 12px;
+  opacity: 0.3;
+}
+
+.main-blog {
+  background-color: #888888;
+  min-height: calc(100vh - 230px);
+  display: flex;
+  align-items: center;
+}
+
+.blog-img {
+  padding: 50px 10px 0 10px;
+}
+
+.info-container {
+  padding: 30px 50px 30px 50px;
+}
+.info-container article h1 {
+  text-align: center;
+  padding-bottom: 10px;
+  color: white;
+}
+
+.profile-main {
+  background-color: #888888;
+  padding: 0 30px 0 30px;
+}
+
+.profile-img-container img {
+  padding-top: 30px;
+}
+
+.profile-info-container h3 {
+  padding-top: 20px;
+  color: white;
+}
+
+.liked-container h2 {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid black;
+  color: white;
+}
+
+.liked-video {
+  padding-top: 15px;
+}
+
+.liked-title {
+  padding-top: 8px;
+  color: #5B2080;
+}/*# sourceMappingURL=style.css.map */
